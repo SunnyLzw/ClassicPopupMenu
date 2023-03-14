@@ -1,0 +1,63 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ActiveControl = StateSwitch
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Win11'#32463#20856#21491#38190#33756#21333#24037#20855
+  ClientHeight = 61
+  ClientWidth = 216
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object MainLayout: TLayout
+    Align = Client
+    Padding.Left = 10.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 10.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Size.Width = 216.000000000000000000
+    Size.Height = 61.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object MainRectangle: TRectangle
+      Align = Client
+      Fill.Color = claWhite
+      Size.Width = 196.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      object StateSwitch: TSwitch
+        IsChecked = False
+        Position.X = 82.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnClick = StateSwitchClick
+        OnSwitch = StateSwitchSwitch
+      end
+      object Label2: TLabel
+        Position.X = 106.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = #26032#29256#33756#21333
+        TabOrder = 1
+      end
+      object Label1: TLabel
+        Position.X = 18.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 70.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = #24403#21069#29366#24577#65306
+        TabOrder = 2
+      end
+    end
+  end
+end
